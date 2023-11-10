@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.2/css/bootstrap.min-jsf.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Aloooooo</h1>
+
+  <form th:action="@{/procura}" method="get">
+    <input type="checkbox" id="papel" name="material" value="Papel">Papel<br>
+    <input type="checkbox" id="plastico" name="material" value="Plástico">Plástico<br>
+    <input type="checkbox" id="vidro" name="material" value="Vidro">Vidro<br>
+    <input type="checkbox" id="metal" name="material" value="Metal">Metal<br>
+    <input type="checkbox" id="eletronico" name="material" value="Eletrônico">Eletrônico<br>
+    <input type="checkbox" id="moveis" name="material" value="Móveis">Móveis<br>
+    <input type="checkbox" id="textil" name="material" value="Têxtil">Têxtil<br>
+    <input type="checkbox" id="baterias" name="material" value="Baterias">Baterias<br>
+    <input type="submit" value="Enviar Cadastro">
+</form>
+</body>
+</html>

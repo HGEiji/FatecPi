@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Ponto de Descarte e Empresa de Coleta</title>
+    <link th:href="@{/style/cadastro.css}" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1>Cadastro</h1>
+        <div id="tipoCadastro">
+            <button id="pontoBtn">Ponto de Descarte</button>
+            <button id="empresaBtn">Empresa de Coleta</button>
+        </div>
+        <form id="cadastroPontoForm" th:action="@{/savePonto}" method="post" enctype="multipart/form-data">   
+        <div id="cadastroPonto">
+            <h2>Cadastro de Ponto de Descarte</h2>
+                    <label for="nome">Nome do Ponto de Descarte:</label>
+                        <input type="text" id="nome" name="nomePonto" required><br>
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="emailPonto" required><br>
+
+            <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="enderecoPonto" required><br>
+                    <label>Tipos de Recicláveis Aceitos:</label><br>
+                        <input type="checkbox" id="papel" name="materialPonto" value="Papel">Papel<br>
+                        <input type="checkbox" id="plastico" name="materialPonto" value="Plástico">Plástico<br>
+                        <input type="checkbox" id="vidro" name="materialPonto" value="Vidro">Vidro<br>
+                        <input type="checkbox" id="metal" name="materialPonto" value="Metal">Metal<br>
+                        <input type="checkbox" id="eletronico" name="materialPonto" value="Eletrônico">Eletrônico<br>
+                        <input type="checkbox" id="moveis" name="materialPonto" value="Móveis">Móveis<br>
+                        <input type="checkbox" id="textil" name="materialPonto" value="Têxtil">Têxtil<br>
+                        <input type="checkbox" id="baterias" name="materialPonto" value="Baterias">Baterias<br>
+
+            
+                   <!-- <label for="horario">Horário de Funcionamento:</label>
+                        <input type="text" id="horario" name="horario" required><br>
+            
+                    <label for="contato">Informações de Contato:</label>
+                        <input type="tel" id="contato" name="contato" required><br>
+                    -->
+
+                    <label for="imagem">Upload de Imagem:</label>
+                        <input type="file" id="imagem" name="imagemPonto" accept="image/*"><br>
+            
+                        <input th:action="@{/savePonto}" type="submit" value="Enviar Cadastro">
+        
+        </form>
+        </div>
+
+        <div id="cadastroEmpresa" style="display: none;">
+            <h2>Cadastro de Empresa de Coleta</h2>
+            <form id="cadastroForm" th:action="@{/save}" method="post" >
+                <label>CNPJ</label>
+                <input name="CNPJ" type="text" onblur="checkCNPJ(this.value)" data-mask="00.000.000/0000-00" class="form-control"/>
+
+
+                <div class="form-group">
+                    <label>E-mail:</label>
+                    <input name="email" type="text" id="emailjs" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Endereço:</label>
+                    <input name="endereco" type="text" id="logradourojs" class="form-control" />
+                </div>
+            
+                <div class="form-group">
+                    <label>Número:</label>
+                    <input name="numero" type="text" id="numerojs" class="form-control" />
+                </div>
+            
+                <div class="form-group">
+                    <label>Material:</label>
+                    <input name="material"  type="text" id="materialjs" class="form-control" />
+                </div>
+                <input th:action="@{/save}" type="submit" value="Cadastrar Empresa">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script th:src="@{/script/script.js}"></script>
+
+
+    <script>
+        const toggleButtons = document.querySelectorAll(".toggle-button");
+
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                toggleButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                this.classList.add("active");
+            });
+        });
+
+        const pontoBtn = document.getElementById("pontoBtn");
+        const empresaBtn = document.getElementById("empresaBtn");
+        const cadastroPonto = document.getElementById("cadastroPonto");
+        const cadastroEmpresa = document.getElementById("cadastroEmpresa");
+
+        pontoBtn.addEventListener("click", function() {
+            cadastroPonto.style.display = "block";
+            cadastroEmpresa.style.display = "none";
+        });
+
+        empresaBtn.addEventListener("click", function() {
+            cadastroPonto.style.display = "none";
+            cadastroEmpresa.style.display = "block";
+        });
+
+    </script>
+</body>
+</html>

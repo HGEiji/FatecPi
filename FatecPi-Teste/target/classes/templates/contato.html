@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato com JavaScript</title>
+    <link rel="stylesheet" th:href="@{style/contato.css}" />
+    <script defer src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-center custom-container" >
+        <h2>Nos contate</h2>
+      </div>
+    </div>
+    <div class="container text-center align-content-center">
+        <h2><b>E aí! Valeu por querer falar conosco!</b></h2>
+        <div class="custom-line-height">
+          <p>Queremos que saibam que estamos sempre de olho nos comentários e e-mails que recebemos de vocês. Cada mensagem que chega até nós é uma contribuição valiosa e nos ajuda a melhorar continuamente nossos serviços.
+          Agradecemos sinceramente por compartilharem seus feedbacks, sugestões e ideias conosco. Essa interação é o que nos ajuda a crescer e a nos adaptar às suas necessidades e expectativas.</p>
+          <p>Então, continuem enviando suas mensagens! Estamos ansiosos para ouvir o que vocês têm a dizer e trabalhar juntos para tornar sua experiência cada vez melhor.</p>
+          <p>Muito obrigado por fazerem parte da nossa comunidade e por nos ajudarem a ser melhores a cada dia.</p>
+      </div>
+    </div>
+    <form action="https://formsubmit.co/ajax/6e4df57799f15ea2e4699ab0b4ed3851" method="POST" data-form>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" required />
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" required />
+      <label for="mensagem">Mensagem</label>
+      <textarea name="mensagem" id="mensagem" required></textarea>
+      <button type="submit" class="btn btn-success" data-button>Enviar</button>
+    </form>
+  </body>
+
+  <script th:src="@{/script/app.js}"></script>
+</html>
