@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Local</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div style="padding-right: 38px;padding-left: 38px;">
+        <nav class="navbar navbar-expand-md py-3" style="background: #5d7362;">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="Index.html" style="padding-bottom: 0px;margin-right: -14px;padding-right: 12px;width: 46px;height: 46px;"><span class="bs-icon-md bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img class="rounded-circle" data-bss-hover-animate="pulse" src="assets/img/WhatsApp%20Image%202023-11-05%20at%2015.25.54.jpeg" width="46"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-5">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul><a class="btn btn-primary ms-md-2" role="button" data-bss-hover-animate="pulse" href="#" data-bs-target="#modal-1" data-bs-toggle="modal">Cadastro de Coleta</a>
+                </div>
+            </div>
+        </nav>
+        <section class="position-relative py-4 py-xl-5">
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Adicione um Ponto de descarte aqui!</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <nav class="navbar navbar-expand-md bg-body py-3">
+                                <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                    <div class="collapse navbar-collapse" id="navcol-3">
+                                        <ul class="navbar-nav mx-auto">
+                                            <li class="nav-item">
+                                                <fieldset style="background: rgba(255,255,255,0);">
+                                                    <div class="toggle"><input type="radio" id="cond_new" name="bike_cond" checked=""><label class="form-label" for="cond_new">Ponto de Descarte</label><input type="radio" id="cond_used" name="bike_cond"><label class="form-label" for="cond_used">Empresa de Coleta</label></div>
+                                                </fieldset>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="row register-form">
+                                <div class="col-md-8 offset-md-2">
+                                    <form class="custom-form" style="padding-left: 0px;margin-left: 0px;padding-right: 0px;margin-right: 0px;">
+                                        <div class="row form-group">
+                                            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Nome do Ponto</label></div>
+                                            <div class="col-sm-6 input-column"><input class="form-control" type="text" style="background: #fff;"></div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-sm-4 label-column"><label class="col-form-label" for="email-input-field">Endereço</label></div>
+                                            <div class="col-sm-6 input-column"><input class="form-control" type="email" style="background: #fff;"></div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-sm-4 label-column"><label class="col-form-label" for="pawssword-input-field">Número</label></div>
+                                            <div class="col-sm-6 input-column"><input class="form-control" type="number" style="background: #fff;"></div>
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col-sm-4 label-column"><label class="col-form-label" for="dropdown-input-field">Material</label></div>
+                                            <div class="col"><select class="form-select" style="background: #fff;">
+                                                    <option value="12">Papelão</option>
+                                                    <option value="13">Pilha</option>
+                                                    <option value="14">Metal</option>
+                                                </select></div>
+                                            <div class="col-sm-4 input-column"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-1"></div>
+                                            <div class="col"><input class="form-control form-control-sm" type="file" style="margin-right: -146px;padding-right: 159px;background: #fff;"></div>
+                                            <div class="col" style="margin-left: -73px;margin-right: -73px;padding-left: 55px;padding-right: 55px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col" style="padding-bottom: 0px;"></div>
+                                            <div class="col"><button class="btn btn-primary" type="button" data-bs-target="#modal-2" data-bs-toggle="modal">Enviar</button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sucesso!!</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center"><i class="icon ion-checkmark-circled text-primary" style="font-size: 154px;"></i></div>
+                            <p>Seu cadastro de ponto de coleta foi realizado com sucesso!</p>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-primary" type="button" data-bs-target="#modal-2" data-bs-toggle="modal">Valeu!</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" tabindex="-1" id="modal-3">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sucesso!!</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text-center"><i class="icon ion-checkmark-circled text-primary" style="font-size: 154px;"></i></div>
+                            <p class="text-center">Sua mensagem foi enviada!<br>Muito obrigado por nos ajudar a melhorar&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-emoji-smile" style="font-size: 20px;">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                    <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"></path>
+                                </svg></p>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <section class="py-4 py-xl-5" style="padding-bottom: 71px;margin-bottom: -35px;">
+                    <div class="container">
+                        <div class="text-white border rounded border-0 d-flex flex-column justify-content-between flex-lg-row p-4 p-md-5" style="margin-bottom: 33px;background: #A6A292;">
+                            <div class="pb-2 pb-lg-1">
+                                <h5 class="fw-bold mb-2">Material de Reciclagem</h5><input type="text" style="margin-bottom: 19px;width: 283.6px;" placeholder="Alumínio, Pilha, Bateria">
+                                <h5 class="fw-bold mb-2">CEP</h5><input type="text" placeholder="00000-000">
+                            </div>
+                            <div class="my-2"><a class="btn btn-primary fs-5 py-2 px-4" role="button" data-bss-hover-animate="pulse" href="Locais.html">Recicle</a></div>
+                        </div>
+                    </div>
+                    <div style="background: url(&quot;assets/img/WhatsApp%20Image%202023-11-12%20at%2001.24.27.jpeg&quot;) top / cover;height: 274px;"></div>
+                    <div>
+                        <h1 style="text-align: center;color: var(--bs-primary);font-weight: bold;padding-top: 21px;">E aí! Valeu por se interessar em falar conosco!</h1>
+                        <p style="color: var(--bs-primary-text-emphasis);text-align: justify;font-size: 20px;padding-left: 59px;padding-right: 59px;">Queremos que saibam que estamos sempre de olho nos comentários e e-mails que recebemos de vocês. Cada mensagem que chega até nós é uma contribuição valiosa e nos ajuda a melhorar continuamente nossos serviços.<br><br>Agradecemos sinceramente por compartilharem seus feedbacks, sugestões e ideias conosco. Essa interação é o que nos ajuda a crescer e a nos adaptar às suas necessidades e expectativas.<br><br>Então, continuem enviando suas mensagens! Estamos ansiosos para ouvir o que vocês têm a dizer e trabalhar juntos para tornar sua experiência cada vez melhor.<br><br>Muito obrigado por fazerem parte da nossa comunidade e por nos ajudarem a ser melhores a cada dia.</p>
+                    </div>
+                    <section class="position-relative py-4 py-xl-5">
+                        <div class="container position-relative">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                                    <div class="card mb-5">
+                                        <div class="card-body p-sm-5">
+                                            <h2 class="text-center mb-4"></h2>
+                                            <form method="post">
+                                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name"></div>
+                                                <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email"></div>
+                                                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Menssagem"></textarea></div>
+                                                <div><button class="btn btn-primary d-block w-100" type="button" data-bs-target="#modal-3" data-bs-toggle="modal">Enviar</button></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div class="container position-relative" style="padding-top: 0px;margin-top: 31px;">
+                <footer class="text-center bg-dark" style="background: url(&quot;assets/img/WhatsApp%20Image%202023-11-11%20at%2023.59.31.jpeg&quot;) center / cover;">
+                    <div style="height: 188px;">
+                        <div style="height: 48px;"></div>
+                        <div class="text-end"><button class="btn btn-primary" type="button" style="margin: 17px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-capslock" style="font-size: 28px;">
+                                    <path fill-rule="evenodd" d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816L7.27 1.047zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1h2.846zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1zm6 0h-5v1h5v-1z"></path>
+                                </svg></button></div>
+                    </div>
+                    <div class="container text-white py-4 py-lg-5" style="background: var(--bs-secondary);">
+                        <ul class="list-inline">
+                            <li class="list-inline-item me-4"></li>
+                            <li class="list-inline-item me-4"><a class="link-light" href="Sobre.html">Sobre Nós</a></li>
+                            <li class="list-inline-item"></li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook text-light">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                </svg></li>
+                            <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-whatsapp text-light">
+                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                                </svg></li>
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram text-light">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                </svg></li>
+                        </ul>
+                        <p class="text-muted mb-0">Copyright © 2023 EcoBit</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
